@@ -1,0 +1,20 @@
+# showiptables
+#
+echo '+++++++++++++  Filter table ++++++++++++'
+iptables -t filter -nL 
+
+echo
+echo '+++++++++++++ Nat table  ++++++++++++'
+iptables -t nat -nL 
+
+echo
+echo '+++++++++++++ Mangle table  ++++++++++++'
+iptables -t mangle -nL 
+
+echo
+echo '+++++++++++++ Raw table  ++++++++++++'
+iptables -t raw -nL 
+
+echo
+echo '+++++++++++++ Security table  ++++++++++++'
+iptables -t security -nL
